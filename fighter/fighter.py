@@ -23,3 +23,9 @@ while (bob > 0 and sue > 0):
     sue = sue - bobhit # they both get to hit even if they're below 0 hp
     print ('Bob hits Sue for ' + str(bobhit))
     print ('Sue hits Bob for ' + str(suehit))
+if (bob > sue and bob > 0):
+    print ('Bob Wins!')
+elif (sue > bob and sue > 0):
+    print ('Sue Wins!')
+else:
+    print ('I guess we\'ll call it a draw!')
