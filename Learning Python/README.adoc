@@ -1,0 +1,5 @@
+[.lead]Excercises below
+
+These are some excercises out of a Udemy course by https://github.com/tim-buchalka[Tim Buchalka].  I'm finding it pretty
+easy to follow and Tim explains things in a way that are easy to digest.  Occassionally 
+I'm additing additional work to extend and deepen my own knowledge.
