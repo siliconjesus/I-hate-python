@@ -1,10 +1,10 @@
 import random
 from datetime import datetime
 random.seed(datetime.now())
-
-answer = random.randrange(1,10)
-guess = int(input("Please enter your guess for the guessing game between 1 and 10\n"))
-count = 0
+difficulty = int(input("Please enter the highest number you want to guess up to: "))
+answer = random.randrange(1,difficulty)
+guess = int(input("Please enter your guess for the guessing game between 1 and {}\n".format(difficulty)))
+count = 1
 
 while (guess != answer):
     if guess > answer:
