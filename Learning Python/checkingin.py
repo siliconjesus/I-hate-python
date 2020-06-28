@@ -5,7 +5,10 @@ parrot = "Norwegian Blue"
 
 letter = input("Enter a character: ")
 
-if letter in parrot:
+# the casefold ensures everything is in the lower case and takes care
+# of languages such as German which have a different case 
+
+if letter in parrot.casefold():
     print("{} is in {}".format(letter, parrot))
 else:
     print("I don't need that letter.")
