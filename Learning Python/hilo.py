@@ -5,7 +5,7 @@ print(f"Please think of a number between {low} and {high}")
 input("PRESS ENTER TO BEGIN")
 
 guesses = 1
-while True:
+while low != high:
     guess = low + (high - low) // 2
     high_low = input("My guess is {}.  Should I guess (h)igher (l)ower or (c)orrect ".format(guess)).casefold()
 
@@ -22,4 +22,7 @@ while True:
     else:
         print("You are a terrible person")
 
-    guesses = guesses + 1
+    guesses += guesses
+else: 
+    print(f"You thought of the number {low}")
+    print(f"I've got it in {guesses} guesses!")
