@@ -1,4 +1,4 @@
-# TODO - input validation
+# TODO: input validation
 
 import random
 from datetime import datetime
