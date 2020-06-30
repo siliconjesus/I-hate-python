@@ -10,8 +10,7 @@ while True:
     if select == 0:
         break
     if select > len(menu_items):
-        print("I don't have that many options today!")
-        break
+        print("I don't have that many options today!\n")
+        continue
     select -= 1
-    print(f"\nYou selected: {menu_items[select]}")
-    print("\n" * 4)
+    print(f"\nYou selected: {menu_items[select]}\n")
