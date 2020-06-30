@@ -8,6 +8,7 @@ while True:
         print(f"{i+1}:\t{menu_items[i]}")
     select = int(input("\nMake a selection: "))
     if select == 0:
+        print("Shutting down!\n")
         break
     if select > len(menu_items):
         print("I don't have that many options today!\n")
