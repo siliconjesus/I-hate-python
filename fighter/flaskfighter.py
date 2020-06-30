@@ -7,4 +7,4 @@ random.seed(datetime.now())
 
 @app.route('/')
 def fighter():
-    return 'Fighters Ready!'
+    print('Fighters Ready!')
