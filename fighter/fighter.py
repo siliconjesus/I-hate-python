@@ -13,8 +13,10 @@ random.seed(datetime.now())
 # Very easy create two variables, bob and sue.  Give them both 50 to represent their HP.
 bob = 50
 sue = 50
+count = 0
 
 while (bob > 0 and sue > 0):
+    count += 1
     print ('Bob has ' + str(bob) + ' hp.')
     print ('Sue has ' + str(sue) + ' hp.')
     bobhit = random.randrange(7) # essentially 1d6
@@ -24,8 +26,8 @@ while (bob > 0 and sue > 0):
     print ('Bob hits Sue for ' + str(bobhit))
     print ('Sue hits Bob for ' + str(suehit))
 if (bob > sue and bob > 0):
-    print ('Bob Wins!')
+    print (f'Bob Wins in {count} rounds!')
 elif (sue > bob and sue > 0):
-    print ('Sue Wins!')
+    print (f'Sue Wins in {count} rounds!')
 else:
-    print ('I guess we\'ll call it a draw!')
+    print (f'I guess we\'ll call it a draw!\nThe battle lasted {count} rounds!')
