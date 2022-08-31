@@ -1,2 +1,7 @@
 .vscode
 __pycache__
+pong/pyvenv.cfg
+pong/bin
+venv
+pong/lib
+pong/include
